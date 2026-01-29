@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: v.$color-footer;
+    padding: 20px;
+    color: v.$color-white;
+    align-items: center;
+
+    .logos { height: 40px; }
+    
+    ul {
+        list-style: none;    
+        display: flex;        
+        flex-direction: row;  
+        justify-content: center; 
+        align-items: center;  
+        gap: 20px;            
+        padding: 0;
+    }
+}
+
+
+// Botón flotante de WhatsApp
+.wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+}

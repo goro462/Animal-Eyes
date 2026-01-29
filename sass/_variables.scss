@@ -1,0 +1,17 @@
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Colores
+$color-fondo-naranja: #F4A261;
+$color-header: #5A3A1E;
+$color-link: #3A2A1F;
+$color-main-beige: #F0EBE3;
+$color-footer: #E76F51;
+$color-white: #ffffff;
+
+// Mixins para ahorrar código
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

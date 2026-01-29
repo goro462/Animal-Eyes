@@ -1,0 +1,17 @@
+@use "variables" as v;
+
+.main-home {
+    min-height: calc(100vh - 160px);
+    background-color: v.$color-main-beige;
+    padding: 20px;
+
+    .hero {
+        text-align: center;
+        padding: 40px;
+        
+        h2 a {
+            color: v.$color-header;
+            text-decoration: underline;
+        }
+    }
+}
