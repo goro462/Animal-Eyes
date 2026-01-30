@@ -52,19 +52,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
-    position: sticky; 
+    padding: 5px 40px;
     top: 0;
+    position: sticky;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 100px;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
 }
 .encabezado img {
-    width: 60px;
+    width: 90px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
+
+.encabezado img:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    margin-left: auto;
+}
+
 .encabezado h1 {
-  color: white;
-    font-size: 1.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -243,9 +257,5 @@ ul {
     color: #666;
     line-height: 1.6;
 }
-
-
-
-
 
 /*# sourceMappingURL=styles.css.map */
