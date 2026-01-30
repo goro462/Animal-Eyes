@@ -6,7 +6,7 @@
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #E76F51;
+  background-color: #f6921e;
   width: 100%;
   padding: 20px 0;
   margin-top: auto;
@@ -48,7 +48,7 @@
 }
 
 .encabezado {
-    background-color: #e67e66; 
+    background-color: #f6921e; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,12 +131,12 @@ ul {
     padding: 50px 20px;
     background-color: #fdf6f0; 
     margin: 30px 0;
-    border-top: 2px solid #e67e66;
-    border-bottom: 2px solid #e67e66;
+    border-top: 2px solid #f6921e;
+    border-bottom: 2px solid #f6921e;
 }
 
 .hero h1{
-  color: #e67e66;
+  color: #f6921e;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -154,12 +154,12 @@ ul {
     padding: 50px 20px;
     background-color: #fdf6f0; 
     margin: 30px 0;
-    border-top: 2px solid #e67e66;
-    border-bottom: 2px solid #e67e66;
+    border-top: 2px solid #f6921e;
+    border-bottom: 2px solid #f6921e;
 }
 
 .shop-invite h2 {
-    color: #e67e66;
+    color: #f6921e;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -171,7 +171,7 @@ ul {
 }
 
 .btn-tienda {
-    background-color: #e67e66;
+    background-color: #f6921e;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -183,7 +183,7 @@ ul {
 }
 
 .btn-tienda:hover {
-    background-color: #d36a53; 
+    background-color: #f6921e; 
     transform: scale(1.05);/
 }
 
@@ -195,7 +195,7 @@ ul {
 }
 
 .nosotros-hero h1 {
-    color: #e67e66;
+    color: #f6921e;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -231,7 +231,7 @@ ul {
 }
 
 .categoria-card h3 {
-    color: #e67e66;
+    color: #f6921e;
     font-size: 1.4rem;
     margin-bottom: 15px;
     border-bottom: 2px solid #fdf6f0; 
