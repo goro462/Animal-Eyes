@@ -4,8 +4,6 @@
 
 
 .main-footer {
-
-
     background-color: #f6921e;
     padding: 20px 0;
     width: 100%;
@@ -17,6 +15,7 @@
     margin-top: auto;
     color: #ffffff;
     align-items: center;
+    flex-shrink: 0;
 }
 .main-footer .logos {
 height: 40px;
@@ -369,11 +368,12 @@ margin: 0;
 
 .contacto-seccion {
     padding: 60px 10%;
-    background-color: #fff5e6;
-    padding: 60px 10%;
+    min-height: 60vh;
     background-color: #fff5e6;
     margin-bottom: 40px; 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacto-contenedor {
@@ -471,6 +471,7 @@ margin: 0;
         flex-direction: column;
     }
 }
+
 
 
 /*# sourceMappingURL=styles.css.map */
