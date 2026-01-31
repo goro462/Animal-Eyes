@@ -1,17 +1,21 @@
-@use "variables" as v;
-
 .main-home {
+    flex: 1;
     min-height: calc(100vh - 160px);
-    background-color: v.$color-main-beige;
+    background-color: $crema;
     padding: 20px;
 
     .hero {
         text-align: center;
-        padding: 40px;
-        
-        h2 a {
-            color: v.$color-header;
-            text-decoration: underline;
+        padding: 40px 20px;
+        h2 {
+            font-size: 3rem;
+            color: $oscuro;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
     }
 }

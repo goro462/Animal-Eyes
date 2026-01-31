@@ -1,0 +1,77 @@
+
+.main-contacto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-seccion {
+    padding: 60px 5%;
+    background-color: $crema;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+
+    .contacto-contenedor {
+        @include caja-estilo-animal;
+        display: flex;
+        background: $blanco;
+        gap: 40px;
+        width: 95%;
+        max-width: 1200px;
+        padding: 40px;
+        border: 4px solid $oscuro;
+        border-radius: 30px;
+        box-shadow: 10px 10px 0px $madera;
+        max-width: 1200px;
+    }
+
+        .contacto-formulario {
+            flex: 1;
+            h2 { color: $naranja; font-size: 2.2rem; }
+            .grupo-input {
+                margin-bottom: 20px;
+                label { display: block; font-weight: bold; margin-bottom: 5px; }
+                input, textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 3px solid $oscuro;
+                    border-radius: 12px;
+                }
+            }
+            
+
+            .grupo-input {
+            margin-bottom: 20px;
+            input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 3px solid $oscuro;
+            border-radius: 12px;
+    }
+}
+
+            .btn-enviar {
+                background-color: $amarillo;
+                border: 3px solid $oscuro;
+                padding: 15px 30px;
+                border-radius: 15px;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: 4px 4px 0px $madera;
+                &:hover { transform: translate(-2px, -2px); background-color: $naranja; color: $blanco; }
+            }
+        }
+
+        .contacto-sucursales {
+            flex: 1;
+            .sucursal-card {
+                background: #f9f9f9;
+                padding: 15px;
+                border: 3px solid $oscuro;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                iframe { border-radius: 10px; margin-top: 10px; }
+            }
+        }
+    }

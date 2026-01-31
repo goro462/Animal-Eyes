@@ -1,26 +1,34 @@
-@use "variables" as v; 
 
 .encabezado {
+    background-color: $naranja; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 5px solid $oscuro; 
     position: sticky;
     top: 0;
-    background-color: v.$color-fondo-naranja;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 20px;
-
-    img { height: 60px; }
-    
-    h1 {
-        color: v.$color-header;
-        font-size: 32px;
-        text-align: center;
-    }
-
-    ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-    }
+    z-index: 1000;
 }
+    .logo img {
+        height: 80px;
+        transition: transform 0.3s ease;
+        &:hover { transform: scale(1.1); }
+    }
+
+    h1 {
+        color: $blanco;
+        text-shadow: 2px 2px 0px $madera;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        a {
+            color: $blanco;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover { color: $amarillo; }
+        }
+    }

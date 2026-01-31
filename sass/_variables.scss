@@ -1,17 +1,13 @@
-// Fuentes
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$naranja: #f6921e;
+$amarillo: #ffcc00;
+$oscuro: #2d2926;
+$madera: #c67d39;
+$crema: #F0EBE3;
+$blanco: #ffffff;
 
-// Colores
-$color-fondo-naranja: #F4A261;
-$color-header: #5A3A1E;
-$color-link: #3A2A1F;
-$color-main-beige: #F0EBE3;
-$color-footer: #E76F51;
-$color-white: #ffffff;
-
-// Mixins para ahorrar código
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin caja-estilo-animal { 
+    background: $blanco;
+    border: 4px solid $oscuro;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px $madera;
 }

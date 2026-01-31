@@ -1,29 +1,25 @@
-@use "variables" as v;
-
 
 .main-footer {
+    background-color: $naranja;
+    padding: 20px 0;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: v.$color-footer;
-    padding: 20px;
-    color: v.$color-white;
+    margin-top: auto;
+    color: $blanco;
     align-items: center;
+    flex-shrink: 0;
 
     .logos { height: 40px; }
     
     ul {
-        list-style: none;    
-        display: flex;        
-        flex-direction: row;  
-        justify-content: center; 
-        align-items: center;  
-        gap: 20px;            
-        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
     }
 }
 
-
-// Botón flotante de WhatsApp
 .wa {
     position: fixed;
     bottom: 20px;
