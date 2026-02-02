@@ -1,15 +1,17 @@
-@use "variables";
-
 $naranja: #f6921e;
-$amarillo: #ffcc00;
-$oscuro: #2d2926;
-$madera: #c67d39;
 $crema: #F0EBE3;
 $blanco: #ffffff;
+$oscuro: #2d2926;
+$cafe: #5A3A1E;
+$cafe-texto: #3A2A1F;
+$gris-suave: #f9f9f9;
+$amarillo: #ffcc00;
+$miel: #c67d39;
+$fondo-claro: #fdf6f0;
 
-@mixin caja-estilo-animal { 
-    background: variables.$blanco;
-    border: 4px solid variables.$oscuro;
+@mixin caja-estilo-animal {
+    background: $blanco;
+    border: 4px solid $oscuro;
     border-radius: 30px;
-    box-shadow: 10px 10px 0px variables.$madera;
+    box-shadow: 10px 10px 0px $miel;
 }

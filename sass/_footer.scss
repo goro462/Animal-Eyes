@@ -1,7 +1,5 @@
 @use "variables";
 
-
-
 .main-footer {
     background-color: variables.$naranja;
     padding: 20px 0;
@@ -11,21 +9,6 @@
     margin-top: auto;
     color: variables.$blanco;
     align-items: center;
-    flex-shrink: 0;
-
     .logos { height: 40px; }
-    
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
-}
-
-.wa {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 65px;
+    ul { list-style: none; display: flex; gap: 20px; justify-content: center; }
 }

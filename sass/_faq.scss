@@ -1,0 +1,11 @@
+@use "variables";
+
+
+.faq-item {
+    background: variables.$blanco;
+    border: 3px solid variables.$oscuro;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 0px variables.$miel;
+    &[open] summary { background-color: variables.$amarillo; border-bottom: 3px solid variables.$oscuro; }
+}

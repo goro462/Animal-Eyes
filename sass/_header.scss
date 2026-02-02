@@ -1,38 +1,46 @@
 @use "variables";
 
-
-
-
 .encabezado {
     background-color: variables.$naranja; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-    border-bottom: 5px solid variables.$oscuro; 
-    position: sticky;
+    padding: 5px 40px;
     top: 0;
+    position: sticky;
     z-index: 1000;
-}
-    .logo img {
-        height: 80px;
+    height: 100px;
+
+    img {
+        width: 100px;
+        border-radius: 10px;
         transition: transform 0.3s ease;
         &:hover { transform: scale(1.1); }
     }
 
     h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
         color: variables.$blanco;
-        text-shadow: 2px 2px 0px variables.$madera;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
     }
 
-    nav ul {
+    ul {
         display: flex;
         list-style: none;
         gap: 20px;
-        a {
-            color: variables.$blanco;
+        margin: 0;
+        li a {
             text-decoration: none;
-            font-weight: bold;
-            &:hover { color: variables.$amarillo; }
+            color: variables.$blanco;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            &:hover { color: #f4ece2; }
         }
     }
+}
+
+.navbar { margin-left: auto; }
