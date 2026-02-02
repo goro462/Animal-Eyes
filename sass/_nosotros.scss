@@ -1,25 +1,98 @@
 @use "variables";
 
 .nosotros-container {
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 0 auto; 
     padding: 0 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nosotros-hero h1 {
+    text-align: center;
     color: variables.$naranja;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin: 10px 0; // Pegado arriba
 }
 
 .intro-text {
-    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 80px; // Mucho espacio abajo para despegar las tarjetas
+    text-align: center;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
-    margin-bottom: 50px;
 }
 
+.productos-grid {
+    display: grid;
+    // Forzamos 3 columnas de 200px para que sean finas y estéticas
+    grid-template-columns: repeat(3, 200px); 
+    gap: 40px; 
+    justify-content: center;
+    width: 100%;
+}
+
+.categoria-card {
+    background-color: white;
+    border: 3px solid variables.$oscuro; // El borde negro que pediste
+    border-radius: 20px;
+    overflow: hidden; // Para que el naranja no se salga de las esquinas
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 0px variables.$miel;
+    height: 280px; // Proporción vertical estética
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 0px variables.$naranja;
+    }
+
+    h3 {
+        background-color: variables.$naranja !important;
+        color: white !important;
+        margin: 0;
+        padding: 15px 10px;
+        text-align: center;
+        font-size: 1rem;
+        border-bottom: 3px solid variables.$oscuro;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    p {
+        padding: 15px;
+        color: #666;
+        text-align: center;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+}
+
+// EL 3-1: La cuarta tarjeta se clava en la columna 2 (el centro)
+.categoria-card:nth-child(4) {
+    grid-column: 2;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .productos-grid {
+        grid-template-columns: 200px;
+    }
+    .categoria-card:nth-child(4) {
+        grid-column: 1;
+    }
+}
 @media (max-width: 1024px) {
     .nosotros-hero h1 { font-size: 2.2rem; }
     .intro-text { font-size: 1.1rem; }
