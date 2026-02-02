@@ -1,6 +1,10 @@
+@use "variables";
+
+
+
 .tienda-seccion {
     padding: 40px;
-    background-color: $crema;
+    background-color: variables.$crema;
     
     .productos-grid {
         display: grid;
@@ -24,10 +28,10 @@
             margin-bottom: 15px;
         }
 
-        h3 { color: $oscuro; }
+        h3 { color: variables.$oscuro; }
         .precio { 
             font-weight: bold; 
-            color: $naranja;
+            color: variables.$naranja;
             font-size: 1.4rem;
         }
     }

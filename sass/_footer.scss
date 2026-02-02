@@ -1,12 +1,15 @@
+@use "variables";
+
+
 
 .main-footer {
-    background-color: $naranja;
+    background-color: variables.$naranja;
     padding: 20px 0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: auto;
-    color: $blanco;
+    color: variables.$blanco;
     align-items: center;
     flex-shrink: 0;
 

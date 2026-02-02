@@ -1,11 +1,15 @@
+@use "variables";
+
+
+
 
 .encabezado {
-    background-color: $naranja; 
+    background-color: variables.$naranja; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    border-bottom: 5px solid $oscuro; 
+    border-bottom: 5px solid variables.$oscuro; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -17,8 +21,8 @@
     }
 
     h1 {
-        color: $blanco;
-        text-shadow: 2px 2px 0px $madera;
+        color: variables.$blanco;
+        text-shadow: 2px 2px 0px variables.$madera;
     }
 
     nav ul {
@@ -26,9 +30,9 @@
         list-style: none;
         gap: 20px;
         a {
-            color: $blanco;
+            color: variables.$blanco;
             text-decoration: none;
             font-weight: bold;
-            &:hover { color: $amarillo; }
+            &:hover { color: variables.$amarillo; }
         }
     }

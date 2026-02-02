@@ -1,7 +1,11 @@
+@use "variables";
+
+
+
 .main-home {
     flex: 1;
     min-height: calc(100vh - 160px);
-    background-color: $crema;
+    background-color: variables.$crema;
     padding: 20px;
 
     .hero {
@@ -9,7 +13,7 @@
         padding: 40px 20px;
         h2 {
             font-size: 3rem;
-            color: $oscuro;
+            color: variables.$oscuro;
             margin-bottom: 20px;
         }
         p {
