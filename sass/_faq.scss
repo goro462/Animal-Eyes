@@ -9,3 +9,14 @@
     box-shadow: 6px 6px 0px variables.$miel;
     &[open] summary { background-color: variables.$amarillo; border-bottom: 3px solid variables.$oscuro; }
 }
+
+@media (max-width: 1024px) {
+    .faq-seccion { padding: 40px 5%; }
+    .faq-titulo { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+    .faq-titulo { font-size: 1.8rem; margin-bottom: 25px; }
+    summary { font-size: 1rem; padding: 15px; }
+    .faq-respuesta { font-size: 0.9rem; }
+}

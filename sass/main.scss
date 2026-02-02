@@ -35,3 +35,13 @@ li, ul { list-style: none; padding: 0; margin: 0; }
     width: 65px;
     z-index: 2000;
 }
+
+
+@media (max-width: 768px) {
+    body { font-size: 14px; }
+    .wa { width: 50px; bottom: 15px; right: 15px; } 
+}
+
+@media (max-width: 480px) {
+    h1, h2 { word-wrap: break-word; } 
+}

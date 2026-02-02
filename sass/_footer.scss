@@ -12,3 +12,16 @@
     .logos { height: 40px; }
     ul { list-style: none; display: flex; gap: 20px; justify-content: center; }
 }
+
+@media (max-width: 1024px) {
+    .main-footer { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+        ul { flex-direction: column; gap: 15px; }
+    }
+}

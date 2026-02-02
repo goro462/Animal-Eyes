@@ -66,3 +66,13 @@
     cursor: pointer;
     &:hover { background-color: variables.$naranja; color: variables.$blanco; }
 }
+
+@media (max-width: 1024px) {
+    .productos-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+
+
+@media (max-width: 480px) {
+    .productos-grid { grid-template-columns: 1fr; padding: 0 10px; }
+    .producto-card img { height: 180px; }
+}

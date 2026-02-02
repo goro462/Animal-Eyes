@@ -31,3 +31,17 @@
     box-shadow: 4px 4px 0px variables.$miel;
     &:hover { background-color: variables.$naranja; color: variables.$blanco; transform: translate(-2px, -2px); }
 }
+
+@media (max-width: 1024px) {
+    .contacto-contenedor { gap: 20px; padding: 30px; }
+}
+
+
+@media (max-width: 768px) { 
+    .contacto-contenedor {
+        flex-direction: column;
+        @include variables.caja-estilo-animal; 
+        padding: 20px;
+    }
+    .contacto-info { border: none; padding: 10px; }
+}

@@ -15,3 +15,10 @@ $fondo-claro: #fdf6f0;
     border-radius: 30px;
     box-shadow: 10px 10px 0px $miel;
 }
+
+@mixin centrar-movil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
