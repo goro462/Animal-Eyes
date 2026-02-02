@@ -1,0 +1,39 @@
+@use "variables";
+
+
+
+
+.tienda-seccion {
+    padding: 40px;
+    background-color: variables.$crema;
+    
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .producto-card {
+        @include caja-animal;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        h3 { color: variables.$oscuro; }
+        .precio { 
+            font-weight: bold; 
+            color: variables.$naranja;
+            font-size: 1.4rem;
+        }
+    }
+}
